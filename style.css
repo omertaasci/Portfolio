@@ -1,0 +1,351 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+     font-family: 'Roboto',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body , html{
+    overflow-x: hidden;
+}
+
+/*----------------------------- Navbar -----------------------------*/
+.navbar{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(109, 104, 104);
+    box-shadow: 0px 1px 10px black;
+}
+
+.logo{
+    color: black;
+    font-size: 30px;
+    font-family: poppins;
+}
+
+.logo a{
+    color: black;
+    font-family: poppins;
+    letter-spacing: 4px;
+}
+
+.nav-links{
+    color: black;
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.nav-links li{
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-links li{
+    margin: 0 30px;
+}
+
+.nav-links a{
+    color: black;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/background.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 5px black;
+}
+
+header .ctn{
+    background: none;
+    font-size: 20px;
+    border: 1px solid white;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h1{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: #300014;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn{
+    padding: 8px 15px;
+    background:#fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/*----------------------------- Projects -----------------------------*/
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #300014;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col img{
+    width: 60%;
+    box-shadow: 0px 1px 10px black;
+}
+
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row .col .ctn {
+    background: none;
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+}
+
+.Projects .row {
+    margin-top: 50px;
+}
+
+h4{
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+
+p{
+    font-size: 20px;
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+
+.Projects .ctn {
+    margin-top: 30px;
+}
+
+/*----------------------------- About -----------------------------*/
+.About {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/bg2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.about-content {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-content p {
+    font-size: 50px;
+}
+
+.about-content h1 {
+    font-size: 7vmin;
+}
+
+.about-content .line {
+    margin-bottom: 50px;
+}
+
+.about-content p {
+    color: rgb(221, 221, 221);
+}
+
+.about-content .ctn {
+    margin-top: 40px;
+}
+
+/*----------------------------- Contact -----------------------------*/
+.Contact .title{
+    color: black;
+    font-size: 50px;
+}
+
+/* Mobile Device */
+
+@media only screen and (max-width:850px){
+
+    /*----------------------------- Navbar -----------------------------*/
+    .menu-btn{
+        display: block;
+    }
+
+    .navbar{
+        padding: 0;
+    }
+
+    .logo{
+        visibility: hidden;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(54, 54, 54);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links a{
+        color: white;
+    }
+
+    .mobile-menu{
+        margin-top: 0px;
+        /*border-bottom-right-radius: 30%;*/
+    }
+
+    .nav-links li{
+        margin: 30px auto;
+    }
+
+    /*----------------------------- Projects -----------------------------*/
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+
+    /*----------------------------- About -----------------------------*/
+    .about-content{
+        width: 100%;
+    }
+
+}
+
+/* Animations */
+img{
+    transition: transform .1s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.ctn:hover{
+    transition: .8s ease;
+    color: black;
+    box-shadow: 2px 2px 5px #00000056;
+}
+
+.row .col .ctn:hover{
+    transition: .4s ease;
+    box-shadow: 2px 4px 5px #00000056;
+}
+
+header .ctn:hover {
+    transition: .3s ease;
+    color: white;
+    box-shadow: 2px 2px 5px #00000056;
+    background-color: rgba(91, 91, 94, 0.3);
+    font-size: 23px;
+}
+
+.nav-links li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 1px;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-links li:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

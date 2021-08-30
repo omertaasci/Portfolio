@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ömer Taşcı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo"><a href="#">Ömer Taşcı</a></h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>Software Developer</h1>
+            <a href="#Projects" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Projects -->
+    <section id="Projects" class="Projects">
+        <div class="title">
+            <h1>My Projects</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/blogapp.png" alt="">
+                <h4>Blog App Project</h4>
+                <p>Blog app i made using C#, .NET MVC, MSSQL, Entity Framework</p>
+                <a href="https://github.com/omertaasci/BlogAppMVC" target="_blank" class="ctn">Github</a>
+            </div>
+
+            <div class="col">
+                <img src="./img/pmsapp.png" alt="">
+                <h4>Personel Managment System</h4>
+                <p>CRUD Project i made using C#, .NET MVC, MSSQL, Entity Framework</p>
+                <a href="https://github.com/omertaasci/PersonalManagmentSystemMVC" target="_blank" class="ctn">Github</a>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="About" class="About">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <div class="line"></div>
+            <p>My name is Ömer Taşcı, I am 16 years old self taught software developer.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="Contact" class="Contact">
+       <div class="title">
+           Contact
+       </div>
+       <div class="line"></div>
+       <div class="title">
+           omertaasci@gmail.com
+       </div>
+    </section>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+</body>
+</html>
